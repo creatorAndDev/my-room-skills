@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="96" viewBox="0 0 240 96">
+  <rect width="240" height="96" fill="#fff"/>
+  <g fill="none" stroke="#cfd2d4" stroke-width="1">
+    <path d="M0 0H240 M0 24H240 M0 48H240 M0 72H240 M0 96H240"/>
+    <path d="M0 0V24 M60 0V24 M120 0V24 M180 0V24 M240 0V24"/>
+    <path d="M30 24V48 M90 24V48 M150 24V48 M210 24V48"/>
+    <path d="M0 48V72 M60 48V72 M120 48V72 M180 48V72 M240 48V72"/>
+    <path d="M30 72V96 M90 72V96 M150 72V96 M210 72V96"/>
+  </g>
+</svg>
