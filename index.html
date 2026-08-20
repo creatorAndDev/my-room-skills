@@ -1,18 +1,379 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width,initial-scale=1" />
-		<meta
-			name="description"
-			content="Frontend and UI engineering portfolio — high-performance web applications, interfaces, and products."
-		/>
-		<title>Frontend &amp; UI Engineer</title>
-		<script type="module" crossorigin src="/my-room-skills/assets/index-309d1a88.js"></script>
-		<link rel="stylesheet" href="/my-room-skills/assets/index-cc0d1f73.css">
-	</head>
-	<body>
-		<div id="app"></div>
-		
-	</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="description" content="Frontend and UI engineering portfolio — high-performance web applications, interfaces, and products." />
+        <title>Frontend &amp; UI Engineer</title>
+        <link rel="stylesheet" type="text/css" href="css/all.css" media="all">
+    </head>
+
+    <body>
+        <div class="cursor-trail" aria-hidden="true">
+            <svg class="cursor-arrow" viewBox="0 0 24 24" width="22" height="22">
+                <path d="M5.5 3.2 L18.8 11.4 L12.6 12.8 L9.9 19.6 Z"></path>
+            </svg>
+            <i></i>
+        </div>
+        <div class="rail">
+            <i style="width: 0%"></i>
+        </div>
+        <div class="lamp-glow-mask blocking" aria-hidden="true">
+            <div class="entrance-overlay"></div>
+        </div>
+        <span class="idea-lamp">
+            <span class="lamp-nudge" data-lamp-nudge>
+                <span class="lamp-swing" data-lamp-swing>
+                    <svg class="lamp-wire" viewBox="-15 -30 30 140" preserveAspectRatio="none" aria-hidden="true">
+                        <path data-lamp-wire d="M0,-30 Q0,40 0,110"></path>
+                    </svg>
+                    <em class="lamp-base" aria-hidden="true"></em>
+                    <button type="button" class="lamp-bulb" data-lamp-bulb style="filter: grayscale(1); box-shadow: none" aria-label="Turn on the light"></button>
+                </span>
+            </span>
+            <small class="lamp-hint" data-lamp-hint aria-hidden="true" hidden>Click</small>
+        </span>
+        <div class="wrapper">
+            <div class="header">
+                <a href="mailto:creator.and.dev@gmail.com">
+                    <span>Contact me</span>
+                </a>
+                <a class="github-link" href="https://github.com/creatorAndDev" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg viewBox="0 0 16 16" aria-hidden="true">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                    </svg>
+                </a>
+            </div>
+            <div class="main">
+                <div class="intro">
+                    <div class="intro-row">
+                        <div class="intro-col second">
+                            <h1>
+                                <span>Built</span>
+                                <span>to</span>
+                                <span>last.</span>
+                            </h1>
+                        </div>
+                        <div class="intro-col">
+                            <span class="intro-cast" data-mascot>
+                                <span class="person-figure">
+                                    <img class="person" src="images/hero-person-cap.webp" alt="" />
+                                    <span class="intro-gaze gaze-left">
+                                        <i data-eye style="transform: translate3d(-50%, -50%, 0)"></i>
+                                    </span>
+                                    <span class="intro-gaze gaze-right">
+                                        <i data-eye style="transform: translate3d(-50%, -50%, 0)"></i>
+                                    </span>
+                                </span>
+                                <span class="cat-shadow"></span>
+                                <span class="cat" data-cat style="background-position: 50% 50%"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="tagline">
+                        <span>FRONTEND / UI / ENGINEERING HIGH-PERFORMANCE WEB APPLICATIONS</span>
+                    </div>
+                    <div class="scroll-cue">↓ Scroll</div>
+                </div>
+                <div class="works" data-works>
+                    <div class="nav-tabs" role="tablist" data-tabs-nav>
+                        <button id="tab-skills" role="tab" aria-selected="true" aria-controls="panel-skills" class="is-active" data-tab-btn="skills" type="button">
+                            Skills
+                        </button>
+                        <button id="tab-me" role="tab" aria-selected="false" aria-controls="panel-me" data-tab-btn="me" type="button">
+                            About me
+                        </button>
+                    </div>
+                    <div class="panel skills-view" id="panel-skills" role="tabpanel" aria-labelledby="tab-skills">
+                        <div class="skill-group">
+                            <div class="skill-grid">
+                                <div class="skill-hitbox">
+                                    <div class="skill-card">
+                                        <span class="skill-spotlight" aria-hidden="true"></span>
+                                        <div class="skill-text">
+                                            <div class="skill-head">
+                                                <h2>JavaScript</h2>
+                                            </div>
+                                            <small>The core language behind every interface I build</small>
+                                        </div>
+                                        <div class="skill-art">
+                                            <img src="images/skill-javascript.webp" alt="JavaScript" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-hitbox">
+                                    <div class="skill-card">
+                                        <span class="skill-spotlight" aria-hidden="true"></span>
+                                        <div class="skill-text">
+                                            <div class="skill-head">
+                                                <h2>TypeScript</h2>
+                                            </div>
+                                            <small>Generics, interfaces, and types that scale with the codebase</small>
+                                        </div>
+                                        <div class="skill-art">
+                                            <img src="images/skill-typescript.webp" alt="TypeScript" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-hitbox">
+                                    <div class="skill-card">
+                                        <span class="skill-spotlight" aria-hidden="true"></span>
+                                        <div class="skill-text">
+                                            <div class="skill-head">
+                                                <h2>Vue.js</h2>
+                                            </div>
+                                            <small>Reactive state, composables, and component architecture</small>
+                                        </div>
+                                        <div class="skill-art">
+                                            <img src="images/skill-vuejs.webp" alt="Vue.js" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-hitbox">
+                                    <div class="skill-card">
+                                        <span class="skill-spotlight" aria-hidden="true"></span>
+                                        <div class="skill-text">
+                                            <div class="skill-head">
+                                                <h2>Nuxt</h2>
+                                            </div>
+                                            <small>SSR and CSR rendering strategies for Vue apps</small>
+                                        </div>
+                                        <div class="skill-art">
+                                            <img src="images/skill-nuxt.webp" alt="Nuxt" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-hitbox">
+                                    <div class="skill-card">
+                                        <span class="skill-spotlight" aria-hidden="true"></span>
+                                        <div class="skill-text">
+                                            <div class="skill-head">
+                                                <h2>State Management</h2>
+                                            </div>
+                                            <small>Centralized stores, actions, and getters across Vuex and Pinia</small>
+                                        </div>
+                                        <div class="skill-art">
+                                            <img src="images/skill-state-management.webp" alt="State Management" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-hitbox">
+                                    <div class="skill-card">
+                                        <span class="skill-spotlight" aria-hidden="true"></span>
+                                        <div class="skill-text">
+                                            <div class="skill-head">
+                                                <h2>Component Architecture</h2>
+                                            </div>
+                                            <small>Reusable UI building blocks</small>
+                                        </div>
+                                        <div class="skill-art">
+                                            <img src="images/skill-component-architecture.webp" alt="Component Architecture" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-hitbox">
+                                    <div class="skill-card">
+                                        <span class="skill-spotlight" aria-hidden="true"></span>
+                                        <div class="skill-text">
+                                            <div class="skill-head">
+                                                <h2>AI Code Review</h2>
+                                            </div>
+                                            <small>Catching bugs before they ship</small>
+                                        </div>
+                                        <div class="skill-art">
+                                            <img src="images/skill-ai-code-review.webp" alt="AI Code Review" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-hitbox">
+                                    <div class="skill-card">
+                                        <span class="skill-spotlight" aria-hidden="true"></span>
+                                        <div class="skill-text">
+                                            <div class="skill-head">
+                                                <h2>Performance &amp; A11y</h2>
+                                            </div>
+                                            <small>Faster load times, better accessibility</small>
+                                        </div>
+                                        <div class="skill-art">
+                                            <img src="images/skill-performance-a11y.webp" alt="Performance &amp; A11y" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-hitbox">
+                                    <div class="skill-card">
+                                        <span class="skill-spotlight" aria-hidden="true"></span>
+                                        <div class="skill-text">
+                                            <div class="skill-head">
+                                                <h2>API Integration</h2>
+                                            </div>
+                                            <small>Wiring REST APIs and third-party services with Axios</small>
+                                        </div>
+                                        <div class="skill-art">
+                                            <img src="images/skill-api-integration.webp" alt="API Integration" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-hitbox">
+                                    <div class="skill-card">
+                                        <span class="skill-spotlight" aria-hidden="true"></span>
+                                        <div class="skill-text">
+                                            <div class="skill-head">
+                                                <h2>PWA</h2>
+                                            </div>
+                                            <small>Progressive Web Apps - background sync, offline caching, and installability</small>
+                                        </div>
+                                        <div class="skill-art">
+                                            <img src="images/skill-pwa.webp" alt="PWA" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-hitbox">
+                                    <div class="skill-card">
+                                        <span class="skill-spotlight" aria-hidden="true"></span>
+                                        <div class="skill-text">
+                                            <div class="skill-head">
+                                                <h2>Motion</h2>
+                                            </div>
+                                            <small>Create animation</small>
+                                        </div>
+                                        <div class="skill-art">
+                                            <img src="images/skill-motion.webp" alt="Motion" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-hitbox">
+                                    <div class="skill-card">
+                                        <span class="skill-spotlight" aria-hidden="true"></span>
+                                        <div class="skill-text">
+                                            <div class="skill-head">
+                                                <h2>Landings</h2>
+                                            </div>
+                                            <small>Build landing pages</small>
+                                        </div>
+                                        <div class="skill-art">
+                                            <img src="images/skill-landings.webp" alt="Landings" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-hitbox">
+                                    <div class="skill-card">
+                                        <span class="skill-spotlight" aria-hidden="true"></span>
+                                        <div class="skill-text">
+                                            <div class="skill-head">
+                                                <h2>WordPress</h2>
+                                            </div>
+                                            <small>Custom builds and cross-browser layouts</small>
+                                        </div>
+                                        <div class="skill-art">
+                                            <img src="images/skill-wordpress.webp" alt="WordPress" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-hitbox">
+                                    <div class="skill-card">
+                                        <span class="skill-spotlight" aria-hidden="true"></span>
+                                        <div class="skill-text">
+                                            <div class="skill-head">
+                                                <h2>Legacy Refactoring</h2>
+                                            </div>
+                                            <small>Turning tangled codebases into maintainable ones</small>
+                                        </div>
+                                        <div class="skill-art">
+                                            <img src="images/skill-legacy-refactoring.webp" alt="Legacy Refactoring" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-hitbox">
+                                    <div class="skill-card">
+                                        <span class="skill-spotlight" aria-hidden="true"></span>
+                                        <div class="skill-text">
+                                            <div class="skill-head">
+                                                <h2>jQuery</h2>
+                                            </div>
+                                            <small>Interactive functionality on legacy codebases</small>
+                                        </div>
+                                        <div class="skill-art">
+                                            <img src="images/skill-jquery.webp" alt="jQuery" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-hitbox">
+                                    <div class="skill-card">
+                                        <span class="skill-spotlight" aria-hidden="true"></span>
+                                        <div class="skill-text">
+                                            <div class="skill-head">
+                                                <h2>Email Templates</h2>
+                                            </div>
+                                            <small>HTML emails that render across major clients</small>
+                                        </div>
+                                        <div class="skill-art">
+                                            <img src="images/skill-email-templates.webp" alt="Email Templates" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-hitbox">
+                                    <div class="skill-card">
+                                        <span class="skill-spotlight" aria-hidden="true"></span>
+                                        <div class="skill-text">
+                                            <div class="skill-head">
+                                                <h2>Mentoring</h2>
+                                            </div>
+                                            <small>Code reviews and guidance for junior devs</small>
+                                        </div>
+                                        <div class="skill-art">
+                                            <img src="images/skill-mentoring.webp" alt="Mentoring" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel about about-panel" id="panel-me" role="tabpanel" aria-labelledby="tab-me" hidden>
+                        <div class="about-intro">
+                            <div class="about-summary">
+                                <dl class="me-facts">
+                                    <div>
+                                        <dt>First name</dt>
+                                        <dd>Yuri</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Position</dt>
+                                        <dd>Frontend Developer / Engineering High-Performance Web Applications</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Work experience</dt>
+                                        <dd>10+ years</dd>
+                                    </div>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="bio">
+                            <div class="about-section-head">
+                                <span>BACKGROUND</span>
+                            </div>
+                            <div class="bio-copy">
+                                <p>An experienced developer with 10+ years across both small projects and large clients.</p>
+                                <p>
+                                    Throughout my career, I've collaborated with long-term teams, maintained production
+                                    applications, improved existing codebases, and delivered solutions that are reliable,
+                                    maintainable, and easy to build upon.
+                                </p>
+                                <p>
+                                    Also an experienced team lead - managed teams of up to 5 people, mentored junior developers,
+                                    and helped shape and optimize team workflows.
+                                </p>
+                                <p>Believes good code and a good team go hand in hand - and enjoys building both.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-section">
+                    <a class="section-title" href="mailto:creator.and.dev@gmail.com"><span>Contact Me</span></a>
+                </div>
+            </div>
+            <div class="footer"><span>&copy; 2026</span></div>
+        </div>
+        <script src="js/assets.js"></script>
+        <script src="js/main.js"></script>
+    </body>
 </html>
